@@ -1,0 +1,22 @@
+{{ partial "head" . }}
+<body class="home-template">
+
+    {{ partial "header" . }}
+    {{ partial "navigation" . }}
+
+    <main class="content" role="main">
+    	<div class="bio">
+    		<p class="">{{ .Site.Params.bio }}<a href="mailto:jaicobstewart@gmail.com"> Please feel free to reach out for a chat.</a> I'm always interested to hear what you are working on!</p>
+            <br>
+            <h1>Projects</h1>
+            <hr>
+    	</div>
+        {{ partial "project-list" . }}
+        {{ partial "pagination" . }}
+    </main>
+
+    {{ partial "footer" . }}
+    {{ partial "js" . }}
+
+</body>
+</html>
